@@ -1,18 +1,10 @@
 // Add your code here
-
+let objConfgc{
+  
+}
 
 function submitData(name, email) {
-    return fetch( 'http://localhost:3000/users', {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify( {
-          name,
-          email
-        } )
-      } )
+    return fetch( 'http://localhost:3000/users', )
       .then( function (response) {
         return response.json()
       } )
