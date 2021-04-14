@@ -22,8 +22,8 @@ function submitData(name, email){
     console.log(response);
   })
   .catch(function(error) {
-    alert("There was an Error.");
-    document.body.innerHTML = error.message
+    alert("Unauthorized Access");
+    document.body.innerHTML = 'Unauthorized Access'
     console.log(error.message);
   });
   
