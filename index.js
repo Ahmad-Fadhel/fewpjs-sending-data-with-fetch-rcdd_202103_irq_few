@@ -24,8 +24,8 @@ function submitData(name, email){
   })
   .catch(function(error) {
     let h3 = document.createElement('h3');
-    h3.innerText = error.message;
-    document.body.insertBefore(h3, script);
+    alert("There was an Error.");
+    document.body.innerHTML = error.message
     console.log(error.message);
   });
   
