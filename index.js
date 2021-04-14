@@ -20,6 +20,9 @@ function submitData(name, email){
   .then(function(json){
     
   })
+  .catch(function(err){
+    err.message;
+  })
   
   return fetch();
 }
