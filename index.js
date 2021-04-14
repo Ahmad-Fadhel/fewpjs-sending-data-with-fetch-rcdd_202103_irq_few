@@ -30,5 +30,4 @@ function submitData(name, email){
     console.log(error.message);
   });
   
-  return fetch();
 }
