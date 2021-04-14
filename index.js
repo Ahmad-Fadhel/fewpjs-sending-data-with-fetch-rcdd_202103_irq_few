@@ -17,10 +17,10 @@ function submitData(name, email) {
         return response.json()
       } )
       .then( function (json) {
-        document.body.innerHTML = json[ "id" ]
+        document.body.innerHTML = json.id
       } )
-      .catch( function (error) {
+      .catch( function (err) {
         alert("There was an Error. please try again later");
-        document.body.innerHTML = error.message
+        document.body.innerHTML = err.message
       } )
   } 
