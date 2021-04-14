@@ -20,13 +20,13 @@ function submitData(name, email){
   .then(function(response) {
     let h2 = document.createElement('h2');
     h2.innerText = response.id;
-    document.body.appendChild(h2);
+    document.body.insertBefore(h2, script);
     console.log(response);
   })
   .catch(function(error) {
     let h3 = document.createElement('h3');
     h3.innerText = error.message;
-    document.body.appendChild(h3);
+    document.body.insertBefore(h3, script);
     console.log(error.message);
   });
   
