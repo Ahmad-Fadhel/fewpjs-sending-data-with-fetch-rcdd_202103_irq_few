@@ -19,7 +19,7 @@ function submitData(name, email){
   })
   .then(function(response) {
     let h2 = document.createElement('h2');
-    document.body.innerHTML = object[ "id" ]
+    document.body.innerHTML = response[ "id" ]
     console.log(response);
   })
   .catch(function(error) {
