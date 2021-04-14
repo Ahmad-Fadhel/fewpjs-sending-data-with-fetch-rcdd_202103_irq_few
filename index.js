@@ -7,9 +7,7 @@ let configObj = {
   body: JSON.stringify(formData)
 };
 function submitData(userName, userEmail){
-  fetch("http://localhost:3000/users", ObjectToConfig{
-    
-  })
+  fetch("http://localhost:3000/users", configObj)
   .then()
   .then()
   
